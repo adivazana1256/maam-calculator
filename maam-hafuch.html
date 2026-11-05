@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>מחשבון מע״מ הפוך — כולל / לא כולל מע״מ | 18%</title>
+  <meta name="description" content="מחשבון חינמי: המרה בין סכום כולל מע״מ לסכום לפני מע״מ ולהפך. שיעור ברירת מחדל 18% (2026). לא ייעוץ מס." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://adivazana1256.github.io/maam-calculator/maam-hafuch.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="he_IL" />
+  <meta property="og:title" content="מחשבון מע״מ הפוך — כולל / לא כולל מע״מ" />
+  <meta property="og:description" content="מחשבון חינמי: המרה בין סכום כולל מע״מ לסכום לפני מע״מ ולהפך. שיעור ברירת מחדל 18% (2026). לא ייעוץ מס." />
+  <meta property="og:url" content="https://adivazana1256.github.io/maam-calculator/maam-hafuch.html" />
+  <meta property="og:image" content="https://adivazana1256.github.io/maam-calculator/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="מחשבון מע״מ הפוך — כולל / לא כולל מע״מ" />
+  <meta name="twitter:description" content="מחשבון חינמי: המרה בין סכום כולל מע״מ לסכום לפני מע״מ ולהפך. שיעור ברירת מחדל 18% (2026). לא ייעוץ מס." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="topnav" aria-label="ניווט ראשי">
+    <div class="wrap">
+      <a class="brand" href="./">מחשבון מע״מ</a>
+      <a href="./">מחשבון</a>
+      <a href="maam-hafuch.html" class="active" aria-current="page">מע״מ הפוך</a>
+      <a href="moadei-maam-2026.html">מועדי 2026</a>
+      <a href="mikdamot.html">מקדמות</a>
+      <a href="patur-vs-murshe.html">פטור / מורשה</a>
+    </div>
+  </nav>
+  <header class="hero">
+    <div class="wrap">
+      <span class="badge">חינם · בלי הרשמה</span>
+      <h1>מחשבון מע״מ הפוך</h1>
+      <p class="sub">כולל מע״מ ↔ לפני מע״מ. שיעור ברירת מחדל 18% (מ־1.1.2025).</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="disclaimer" role="note">
+      לא ייעוץ מס. כלי המרה פשוט בלבד — אינו מחליף חשבונית או דיווח.
+    </div>
+    <section class="card">
+      <h2>המרה</h2>
+      <label for="rate2">שיעור מע״מ (%)</label>
+      <input id="rate2" type="number" value="18" min="0" max="100" step="0.01" inputmode="decimal" />
+      <div class="row">
+        <div>
+          <label for="net">סכום לפני מע״מ (₪)</label>
+          <input id="net" type="number" value="1000" min="0" step="0.01" inputmode="decimal" />
+        </div>
+        <div>
+          <label for="gross2">סכום כולל מע״מ (₪)</label>
+          <input id="gross2" type="number" value="1180" min="0" step="0.01" inputmode="decimal" />
+        </div>
+      </div>
+      <div class="results">
+        <div class="kpi"><div class="lab">סכום המע״מ</div><div class="val" id="vatAmt">—</div></div>
+        <div class="kpi emphasis"><div class="lab">לפני מע״מ</div><div class="val" id="netOut">—</div></div>
+        <div class="kpi emphasis"><div class="lab">כולל מע״מ</div><div class="val" id="grossOut">—</div></div>
+      </div>
+      <p class="muted" style="margin-top:12px">
+        נוסחאות: כולל = לפני × (1 + שיעור); לפני = כולל ÷ (1 + שיעור); מע״מ = כולל − לפני.
+        מקור לשיעור 18%: <a href="https://www.gov.il/he/pages/dec1270-2024" rel="noopener">gov.il/he/pages/dec1270-2024</a>.
+      </p>
+    </section>
+    <p><a class="cta secondary" href="./">למחשבון מע״מ דו־חודשי (עסקאות ותשומות) ←</a></p>
+    <section class="card">
+      <h2>רוצים מעקב לכל השנה?</h2>
+      <p>
+        המחשבונים והמדריכים כאן נותנים תמונה נקודתית. ערכת Excel / Google Sheets
+        לעוסק מורשה 2026 כוללת יומן חשבוניות, הכרה חלקית, 6 תקופות דו־חודשיות עם מועדים רשמיים,
+        מקדמות מס הכנסה וכרית מע״מ — בעברית מלאה, בלי מאקרו.
+      </p>
+      <a class="cta" href="https://adivazana.gumroad.com/l/iwkate">לערכת עוסק מורשה 2026 ב־₪79 ←</a>
+      <p class="muted" style="text-align:center">הורדה מיידית ב־Gumroad · לא ייעוץ מס</p>
+    </section>
+    <section class="card sources">
+      <h2>מקורות רשמיים</h2>
+      <ul class="clean">
+        <li>שיעור מע״מ 18% מ־1.1.2025: <a href="https://www.gov.il/he/pages/dec1270-2024" rel="noopener">gov.il/he/pages/dec1270-2024</a></li>
+        <li>מועדי דיווח ותשלום 2026: <a href="https://www.gov.il/he/pages/pa151025-2" rel="noopener">gov.il/he/pages/pa151025-2</a></li>
+        <li>תקרת עוסק פטור 2026 (122,833 ₪): <a href="https://www.gov.il/he/service/request-open-exempt-dealer-via-internet" rel="noopener">gov.il שירות עוסק פטור</a></li>
+      </ul>
+    </section>
+    <section class="card related">
+      <h2>עוד בדף החינמי</h2>
+      <a href="./">מחשבון מע״מ דו־חודשי</a>
+      <a href="maam-hafuch.html">מחשבון מע״מ הפוך (כולל / לא כולל)</a>
+      <a href="moadei-maam-2026.html">מועדי דיווח מע״מ 2026</a>
+      <a href="mikdamot.html">איך מחשבים מקדמות מס הכנסה</a>
+      <a href="patur-vs-murshe.html">עוסק פטור או עוסק מורשה 2026</a>
+    </section>
+    <footer>
+      <p>© 2026 ערכת עוסק מורשה · כלי מעקב בלבד · לא ייעוץ מס</p>
+      <p>אין איסוף נתונים — החישוב רץ בדפדפן שלכם בלבד. אין סקריפטי מעקב.</p>
+    </footer>
+  </main>
+  <script>
+    (function(){
+      var net = document.getElementById('net');
+      var gross = document.getElementById('gross2');
+      var rate = document.getElementById('rate2');
+      var lock = false;
+      function n(el){ var v=parseFloat(el.value); return isFinite(v)?v:0; }
+      function fmt(x){ return x.toLocaleString('he-IL',{minimumFractionDigits:2,maximumFractionDigits:2})+' ₪'; }
+      function show(fromNet){
+        var r = n(rate)/100;
+        var before, after;
+        if (fromNet) {
+          before = n(net);
+          after = before * (1+r);
+          if (!lock) { lock=true; gross.value = (Math.round(after*100)/100).toFixed(2); lock=false; }
+        } else {
+          after = n(gross);
+          before = r===-1 ? 0 : after / (1+r);
+          if (!lock) { lock=true; net.value = (Math.round(before*100)/100).toFixed(2); lock=false; }
+        }
+        document.getElementById('vatAmt').textContent = fmt(after - before);
+        document.getElementById('netOut').textContent = fmt(before);
+        document.getElementById('grossOut').textContent = fmt(after);
+      }
+      net.addEventListener('input', function(){ show(true); });
+      gross.addEventListener('input', function(){ show(false); });
+      rate.addEventListener('input', function(){ show(true); });
+      show(true);
+    })();
+  </script>
+</body>
+</html>
