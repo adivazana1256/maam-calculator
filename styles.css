@@ -212,3 +212,8 @@ table.dates .ltr { direction: ltr; unicode-bidi: isolate; }
   font-weight: 600;
   margin-inline-end: 4px;
 }
+
+.disclaimer a { color: var(--red); text-decoration: underline; }
+.legal p { margin: 0 0 12px; }
+.legal p:last-child { margin-bottom: 0; }
+footer a { color: var(--teal); }
