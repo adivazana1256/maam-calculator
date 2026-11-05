@@ -180,3 +180,35 @@ table.dates .ltr { direction: ltr; unicode-bidi: isolate; }
 }
 .faq summary { font-weight: 700; cursor: pointer; }
 .related a { display: block; margin: 6px 0; }
+
+.launch-banner {
+  display: block;
+  background: linear-gradient(90deg, #0D7377, #14B8A6);
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+.launch-banner:hover { filter: brightness(1.06); color: #fff !important; }
+.launch-banner .code {
+  display: inline-block;
+  background: rgba(255,255,255,.18);
+  padding: 1px 8px;
+  border-radius: 6px;
+  margin-inline: 2px;
+  letter-spacing: 0.02em;
+}
+@media (max-width: 560px) {
+  .launch-banner { font-size: 0.84rem; padding: 9px 12px; }
+}
+.cta-group { display: grid; gap: 10px; margin: 8px 0; }
+.price-was {
+  text-decoration: line-through;
+  opacity: 0.75;
+  font-weight: 600;
+  margin-inline-end: 4px;
+}
