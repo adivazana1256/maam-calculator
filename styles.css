@@ -234,6 +234,81 @@ table.dates .ltr { direction: ltr; unicode-bidi: isolate; }
   margin-inline-end: 4px;
 }
 
+a.hero-offer {
+  display: inline-block;
+  margin-top: 16px;
+  background: var(--teal);
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+a.hero-offer:hover { filter: brightness(1.06); }
+.hero-note { color: #CBD5E1; font-size: 0.9rem; margin: 10px 0 0; }
+.steps { display: grid; gap: 12px; }
+@media (min-width: 760px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+.step {
+  background: var(--light);
+  border-radius: 12px;
+  padding: 14px;
+}
+.step .num {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  background: var(--teal);
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.step h3 { margin: 0 0 6px; }
+.step p { margin: 0; }
+.sample-flag {
+  display: inline-block;
+  background: var(--cream);
+  border: 1px solid #F3E2B3;
+  color: var(--navy);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.price-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: baseline;
+  margin: 0 0 8px;
+}
+.price-row strong { font-size: 1.8rem; color: var(--teal); }
+.guarantee {
+  background: #ECFDF5;
+  border: 1px solid #A7F3D0;
+  border-radius: 14px;
+  padding: 16px 18px;
+}
+.sticky-cta { display: none; }
+@media (max-width: 720px) {
+  body.service-page { padding-bottom: 84px; }
+  .sticky-cta {
+    display: block;
+    position: fixed;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 30;
+    background: #fff;
+    border-top: 1px solid var(--border);
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    box-shadow: 0 -4px 16px rgba(15,23,42,.08);
+  }
+  .sticky-cta .cta { margin: 0; padding: 14px 16px; font-size: 1.02rem; }
+}
 .disclaimer a { color: var(--red); text-decoration: underline; }
 .legal p { margin: 0 0 12px; }
 .legal p:last-child { margin-bottom: 0; }
